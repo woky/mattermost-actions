@@ -15,7 +15,7 @@ jobs:
         msg="Message"
         logfile=logfile.txt
 
-        find /var >logfile.txt
+        ls -l / >logfile.txt
 
         jq -n \
             --arg message "$msg" \
