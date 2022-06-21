@@ -12,6 +12,7 @@ jobs:
     - name: Create the Mattermost Message
       run: |
         # TODO: props.card needs to have the logs properly escaped
+        echo '{}' | jq
         echo "{\"text\":\"foobar\", \"icon-url\": \"https://annaelizabeth2019.github.io/the-rock-paper-scissors-2/images/therock1.jpg\", \"username\": \"woky\"}" > mattermost.json
 
     - uses: mattermost/action-mattermost-notify@master
