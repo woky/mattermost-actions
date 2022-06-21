@@ -24,7 +24,7 @@ jobs:
         {
             text: $message,
             props: {
-                card: $logfile,
+                card: "```\($logfile)```",
             }
         }
         EOF
